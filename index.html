@@ -4,28 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Styles -->
+    <!------------------------>
+    <!--       Styles       -->
+    <!------------------------>
     <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/topmenu.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
 
     <title>/home</title>
   </head>
   <body>
     <div class="main-container">
-      <div class="counter-lines">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
+      <div class="sidebar">
+        <div class="counter-lines" id="counter-lines"></div>
       </div>
       <div class="content">
         <div class="top-menu">
-          <div class="logo"></div>
+          <div class="logo">
+            <h2>Gonçalo Sousa</h2>
+            <p>Developer</p>
+          </div>
           <div class="menu">
             <a href="#">/home</a>
             <a href="#">/about</a>
             <a href="#">/projects</a>
             <a href="#">/contacts</a>
+          </div>
+          <div>
+            <h3>Hi, I'm Gonçalo, a</h3>
           </div>
         </div>
       </div>
@@ -38,12 +44,15 @@
         </div>
         <div class="bottom-SocialMedia"></div>
         <div class="copyrights">
-          <p>Copyright &copy; 2024 Gonçalo Sousa</p>
+          <p id="copyrights"></p>
         </div>
       </div>
     </div>
-  </body>
 
-  <!-- JavaScript -->
-  <!-- <script></script> -->
+    <!------------------------>
+    <!--     JavaScript     -->
+    <!------------------------>
+    <script src="./assets/js/sidebarNumbers.js"></script>
+    <script src="./assets/js/date.js"></script>
+  </body>
 </html>
