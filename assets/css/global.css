@@ -3,6 +3,23 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 body {
+  margin: 0;
   background-color: #202020;
   font-family: "VT323", monospace;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  height: 100%;
+  padding-top: 10px;
+  background-color: #191919;
+  color: #888;
+}
+
+.sidebar span {
+  font-size: 20px;
+  margin-bottom: 4px;
 }

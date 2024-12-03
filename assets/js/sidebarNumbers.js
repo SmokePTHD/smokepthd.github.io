@@ -1,21 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const counterLinesContainer = document.getElementById("counter-lines");
+  const sidebar = document.getElementById("sidebar");
+  const numberHeight = 25;
+  const pageHeight = document.documentElement.scrollHeight;
 
-  function populateLineNumbers() {
-    counterLinesContainer.innerHTML = "";
+  const numberOfLines = pageHeight / numberHeight;
 
-    const lineHeight = 25;
-    const pageHeight = document.documentElement.scrollHeight;
-    const lineCount = Math.floor(pageHeight / lineHeight);
+  for (var i = 1; i < numberOfLines; i++) {
+    const newSpan = document.createElement("span");
+    newSpan.innerHTML = i;
 
-    for (let i = 1; i <= lineCount; i++) {
-      const lineNumber = document.createElement("span");
-      lineNumber.textContent = i;
-      counterLinesContainer.appendChild(lineNumber);
-    }
+    sidebar.appendChild(newSpan);
   }
-
-  populateLineNumbers();
-
-  window.addEventListener("resize", populateLineNumbers);
 });
