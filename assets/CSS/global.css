@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+* {
+  font-family: "VT323", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  background-color: #202020;
+  display: flex;
+}
+
+/* <-----> Side Bar <-----> */
+
+.sidebar {
+  position: flex;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background-color: #191919;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.sidebar span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+/* <-----> Content <-----> */
+
+.content {
+  padding: 20px;
+  flex: 1;
+}
+
+/* <-----> Top Menu <-----> */
+
+.content > .topmenu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topmenu > .logo {
+  margin-left: 1vw;
+}
+
+.topmenu > .logo > p {
+  margin-left: 3.5vw;
+}
+
+.topmenu > .menu > a,
+.footer > .menu > a {
+  font-size: 1.4em;
+  margin-right: 0.5em;
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+}
+
+.topmenu > .menu > a::after,
+.footer > .menu > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+.topmenu > .menu > a:hover::after,
+.footer > .menu > a:hover::after {
+  width: 100%;
+}
+
+/* <-----> Footer <-----> */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer > .menu > a {
+  font-size: 1.2rem;
+}
+
+.social-media > a > i {
+  font-size: 24px;
+  margin-right: 0.5vw;
+}
