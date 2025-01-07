@@ -37,16 +37,16 @@ body {
   font-size: 17px;
 }
 
-/* <-----> Content <-----> */
+/* <-----> container <-----> */
 
-.content {
+.container {
   padding: 20px;
   flex: 1;
 }
 
 /* <-----> Top Menu <-----> */
 
-.content > .topmenu {
+.container > .topmenu {
   display: flex;
   justify-content: space-between;
 }
