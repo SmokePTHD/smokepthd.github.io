@@ -100,3 +100,38 @@ body {
   font-size: 24px;
   margin-right: 0.5vw;
 }
+
+* Menu normal */
+.topmenu > .menu {
+  display: flex;
+}
+
+/* Ícone do Burger */
+.burger-menu {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Estilo do menu no mobile */
+@media (max-width: 750px) {
+  .topmenu > .menu {
+    display: none; /* Oculta o menu */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Distância do topo */
+    right: 20px;
+    background-color: #191919;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .burger-menu {
+    display: block; /* Exibe o ícone do burger */
+  }
+
+  .topmenu > .menu.active {
+    display: flex; /* Mostra o menu quando a classe "active" for adicionada */
+  }
+}
