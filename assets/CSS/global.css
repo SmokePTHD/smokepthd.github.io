@@ -101,7 +101,7 @@ body {
   margin-right: 0.5vw;
 }
 
-* Menu normal */
+/* Menu normal */
 .topmenu > .menu {
   display: flex;
 }
@@ -116,22 +116,28 @@ body {
 /* Estilo do menu no mobile */
 @media (max-width: 750px) {
   .topmenu > .menu {
-    display: none; /* Oculta o menu */
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Distância do topo */
-    right: 20px;
+    top: 0;
+    right: 0;
     background-color: #191919;
-    width: 200px;
+    width: 100%;
+    height: 100%;
     padding: 10px;
-    border-radius: 5px;
   }
 
   .burger-menu {
-    display: block; /* Exibe o ícone do burger */
+    display: block;
   }
 
   .topmenu > .menu.active {
-    display: flex; /* Mostra o menu quando a classe "active" for adicionada */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu.active a {
+    font-size: 2em;
+    margin: 0.3em;
   }
 }
