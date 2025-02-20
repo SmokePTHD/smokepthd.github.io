@@ -15,6 +15,10 @@ body {
   display: flex;
 }
 
+body.active-menu {
+  overflow: hidden;
+}
+
 /* <-----> Side Bar <-----> */
 
 .sidebar {
@@ -123,7 +127,7 @@ body {
     right: 0;
     background-color: #191919;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 10px;
   }
 
