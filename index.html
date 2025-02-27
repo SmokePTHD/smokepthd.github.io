@@ -18,55 +18,22 @@
     <title>/home</title>
   </head>
   <body>
-    <div class="sidebar" id="sidebar"></div>
-    <div class="container">
-      <div class="topmenu">
-        <div class="logo">
-          <h2>//Gonçalo Sousa</h2>
-          <p>Developer</p>
-        </div>
-        <div class="menu" id="menu">
-          <a href="">/home</a>
-          <a href="./pages/about.html">/about</a>
-          <a href="./pages/portfolio.html">/portfolio</a>
-          <a href="./pages/services.html">/services</a>
-          <a href="./pages/contacts.html">/contacts</a>
-        </div>
-        <div class="burger-menu" id="burger-menu">
-          <i class="fa fa-bars"></i>
-        </div>
-      </div>
-      <div class="wellcom">
-        <h4>// Hi, I’m Gomçalo, a</h4>
-        <p>{}</p>
-      </div>
-      <div style="height: 1000px"></div>
-      <div class="footer">
-        <div class="menu">
-          <a href="">/home</a>
-          <a href="./pages/about.html">/about</a>
-          <a href="./pages/portfolio.html">/portfolio</a>
-          <a href="./pages/services.html">/services</a>
-          <a href="./pages/contacts.html">/contacts</a>
-        </div>
-        <div class="social-media">
-          <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://github.com/SmokePTHD" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="https://www.instagram.com/_goncalo_19_/" target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-        </div>
-        <div class="copyrights">
-          <p class="copy" id="copyrigths"></p>
-        </div>
-      </div>
-    </div>
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="container">
+      <header id="header" class="topmenu"></header>
+
+      <section class="wellcom">
+        <p>// Hi, I’m Gomçalo, a</p>
+        <h4 id="animated-text"></h4>
+      </section>
+
+      <section style="height: 1000px"></section>
+
+      <footer id="footer" class="footer"></footer>
+    </main>
 
     <!-- JS -->
-    <script src="./assets/JS/SideBarNumbers.js"></script>
-    <script src="./assets/JS/CopyRights.js"></script>
-    <script src="./assets/JS/Responsive.js"></script>
+    <script src="./assets/JS/loadComponents.js"></script>
+    <script src="./assets/JS/animatedText.js"></script>
   </body>
 </html>

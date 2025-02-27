@@ -144,4 +144,8 @@ body.active-menu {
     font-size: 2em;
     margin: 0.3em;
   }
+
+  .footer > .menu {
+    display: none;
+  }
 }

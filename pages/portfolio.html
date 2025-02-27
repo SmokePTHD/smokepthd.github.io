@@ -18,22 +18,11 @@
     <title>/home/portfolio</title>
   </head>
   <body>
-    <div class="sidebar" id="sidebar"></div>
-    <div class="container">
-      <div class="topmenu">
-        <div class="logo">
-          <h2>//Gonçalo Sousa</h2>
-          <p>Developer</p>
-        </div>
-        <div class="menu">
-          <a href="../index.html">/home</a>
-          <a href="./about.html">/about</a>
-          <a href="">/portfolio</a>
-          <a href="./services.html">/services</a>
-          <a href="./contacts.html">/contacts</a>
-        </div>
-      </div>
-      <div class="content">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="container">
+      <header id="header" class="topmenu"></header>
+
+      <section class="content">
         <div class="wellcom">
           <h2>{"Portfolio"}</h2>
           <p>Here you can see some of the projects that I worked</p>
@@ -75,31 +64,13 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer">
-        <div class="menu">
-          <a href="../index.html">/home</a>
-          <a href="./about.html">/about</a>
-          <a href="">/portfolio</a>
-          <a href="./services.html">/services</a>
-          <a href="./contacts.html">/contacts</a>
-        </div>
-        <div class="social-media">
-          <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://github.com/SmokePTHD" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="https://www.instagram.com/_goncalo_19_/" target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-        </div>
-        <div class="copyrights">
-          <p class="copy" id="copyrigths"></p>
-        </div>
-      </div>
-    </div>
+      </section>
+
+      <footer id="footer" class="footer"></footer>
+    </main>
+
     <!-- JS -->
-    <script src="/assets/JS/SideBarNumbers.js"></script>
-    <script src="/assets/JS/CopyRights.js"></script>
+    <script src="/assets/JS/loadComponents.js"></script>
+    <script src="/assets/JS/Responsive.js"></script>
   </body>
 </html>
